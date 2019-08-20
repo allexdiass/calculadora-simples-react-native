@@ -14,10 +14,10 @@ export default class App extends Component {
   }
 
   limpaMemoria = () => {
-    this.setState({ displayValue = '0'})
+    this.setState({ displayValue: '0'})
   }
 
-  setOperaocao = oracao => {
+  setOperacao = operacao => {
 
   }
 
@@ -28,22 +28,22 @@ export default class App extends Component {
         <View style={styles.botoes}>
           <Botao label='AC' tresPosicoes onClick={this.limpaMemoria}/>
           {/** colocamos assim e nao igual acima porque nesse caso precisamos passar parametros */}
-          <Botao label='/' operacao onClick={this.setOperaocao}/>
+          <Botao label='/' operacao onClick={this.setOperacao}/>
           <Botao label='7' onClick={this.addDigito}/>
           <Botao label='8' onClick={this.addDigito}/>
           <Botao label='9' onClick={this.addDigito}/>
-          <Botao label='*' operacao onClick={this.setOperaocao}/>
+          <Botao label='*' operacao onClick={this.setOperacao}/>
           <Botao label='4' onClick={this.addDigito}/>
           <Botao label='5' onClick={this.addDigito}/>
           <Botao label='6' onClick={this.addDigito}/>
-          <Botao label='-' operacao onClick={this.setOperaocao}/>
+          <Botao label='-' operacao onClick={this.setOperacao}/>
           <Botao label='1' onClick={this.addDigito}/>
           <Botao label='2' onClick={this.addDigito}/>
           <Botao label='3' onClick={this.addDigito}/>
-          <Botao label='+' operacao onClick={this.setOperaocao}/>
+          <Botao label='+' operacao onClick={this.setOperacao}/>
           <Botao label='0' duasPosicoes onClick={this.addDigito}/>
           <Botao label='.' onClick={this.addDigito}/>
-          <Botao label='=' operacao onClick={this.setOperaocao}/>
+          <Botao label='=' operacao onClick={this.setOperacao}/>
         </View>
       </View>
     )
